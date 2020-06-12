@@ -11,4 +11,9 @@
 // Use your function to create a header
 // and append it to the DOM inside the div.header-container
 
-function Header() {}
+function Header() {
+    const headerDiv = document.querySelector('div');
+    const headerSpan = document.querySelector('span');
+    const headerTitle = document.querySelector('h1');
+    const headerSpan2 = document.querySelector('span');
+};
