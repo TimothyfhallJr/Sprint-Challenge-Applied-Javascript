@@ -13,38 +13,34 @@
 
 function Header() {
 
-    // creating 
+//    creating elements 
+
+const headerDiv = document.createElement('div');
+const headerSpan1 = document.createElement('span');
+const headerTitle = document.createElement('h1');
+const headerSpan2 = document.createElement('span');
 
 
-    const headerDiv = document.querySelector('div');
-    const headerSpan1 = document.querySelector('span');
-    const headerTitle = document.querySelector('h1');
-    const headerSpan2 = document.querySelector('span');
+// appending elements 
 
-    // pieces appending
+headerDiv.appendChild(headerSpan1);
+headerDiv.appendChild(headerTitle);
+headerDiv.appendChild(headerSpan2);
 
-    headerDiv.appendChild(headerSpan1);
-    headerDiv.appendChild(headerTitle);
-    headerDiv.appendChild(headerSpan2);
+//class Listing
 
-    // classLists 
+headerDiv.classList.add('header');
+headerSpan1.classList.add('date');
+headerSpan2.classList.add('temp');
 
-    headerDiv.classList.add('header');
-    deaderSpan1.classList.add('date');
-    headerSpan2.classList.add('temp');
+// textContent
 
-    // Content Update 
+headerSpan1.textContent = 'MARCH 28, 2019';
+headerTitle.textContent = 'Lambda Times';
+headerSpan2.textContent = '98°';
 
-    headerSpan1.textContent('SMARCH 28, 2019');
-    headerTitle.textContent('Lambda Times');
-    headerSpan2.textContent('98°');
-
-    return headerDiv;
-
-
-
+return headerDiv;
 };
 
-let headerContainer = document.querySelector('.header-container');
-
-headerContainer.append(Header());
+headerContent = document.querySelector('.header-container');
+headerContent.appendChild(Header());
